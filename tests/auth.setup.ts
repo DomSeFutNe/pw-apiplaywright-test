@@ -4,7 +4,7 @@ import fs from "node:fs";
 
 const authFile = ".auth/user.json";
 
-setup("Authentication", async ({ request }) => {
+setup("Authentication", async ({ page, request }) => {
     // Login with UI and store the token in the storage state
     // await page.goto("https://conduit.bondaracademy.com/");
 
